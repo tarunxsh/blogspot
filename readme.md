@@ -1,4 +1,4 @@
-The project may take some time to start on the first run because it is hosted on [Render’s](https://render.com/) free plan.
+NOTE : The project may take some time to start on the first run because it is hosted on [Render’s](https://render.com/) free plan
 
 ---
 
@@ -9,6 +9,7 @@ The project may take some time to start on the first run because it is hosted on
 - Integrated markdown editor support
 - Fully responsive UI in pure html and css
 - Dockerized the app for hassle-free sharing and running
+- Checkout at [blog.tarunxsh.xyz](https://blog.tarunxsh.xyz/)
 
 # Screenshots
 ![Articles List.](/docs/v2.0/thateeguy_index.png "Articles List.")
