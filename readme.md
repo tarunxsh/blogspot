@@ -2,7 +2,15 @@ The project may take some time to start on the first run because it is hosted on
 
 ---
 
-# Images
+# Blogspot -   The Blogging Platform For Developers
+- Used Python, Django, PostgreSql and HTML/CSS/JavaScript
+- Users can Draft, Publish, Edit, Delete and tag their Posts
+- Register, Login and logout support for users
+- Integrated markdown editor support
+- Fully responsive UI in pure html and css
+- Dockerized the app for hassle-free sharing and running
+
+# Screenshots
 ![Articles List.](/docs/v2.0/thateeguy_index.png "Articles List.")
 ![Markdown Editor.](/docs/v2.0/thateeguy_newpost.png "Markdown Editor.")
 ![Login Page.](/docs/v2.0/thateeguy_login.png "Login Page.")
