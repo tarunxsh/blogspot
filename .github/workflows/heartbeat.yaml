@@ -4,10 +4,10 @@ on:
   - cron: "*/10 * * * *"  # every 10 minute
 
 jobs:
-  stale:
+  ping:
     runs-on: ubuntu-latest
     steps:
     - uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://blog.tarunxsh.xyz/'
+        url: 'https://blog.tarunxsh.xyz/ping/'
         method: 'GET'

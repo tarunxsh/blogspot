@@ -10,10 +10,10 @@ set -o errexit
 source .env
 
 # Convert static asset files
-# poetry run python manage.py collectstatic --no-input
+poetry run python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
-# poetry run python manage.py migrate
+poetry run python manage.py migrate
 
 # create super user on first deploy
 # Set the env var CREATE_SUPERUSER, deploy to have the command run,

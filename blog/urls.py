@@ -1,5 +1,9 @@
 from django.urls import path,include
 from .views import ListIndex,ListByTag, about,newpost,post_detail,post_publish , post_draft ,post_draft_list,post_remove,post_edit
+from django.http import JsonResponse
+
+def ping(request):
+    return JsonResponse({ 'ping': 'pong' })
 
 urlpatterns = [
     # path('',index,name='index'),
@@ -13,5 +17,6 @@ urlpatterns = [
     path('drafts/', post_draft_list, name='post_draft_list'),
     path('post/<pk>/remove/<slug:slug>',post_remove, name='post_remove'),
     path('post/<pk>/edit/',post_edit, name='post_edit'),
+    path('ping/', ping, name='ping'),
 
 ]
