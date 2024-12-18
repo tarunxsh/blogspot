@@ -19,3 +19,5 @@ RUN poetry install
 
 # Expose the port the app will run on
 EXPOSE 8000
+	
+ENTRYPOINT ["./entrypoint.sh"]
