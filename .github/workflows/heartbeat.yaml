@@ -1,13 +1,12 @@
 name: "Heartbeat"
 on:
   schedule:
-  - cron: "*/10 * * * *"  # every 10 minute
+    - cron: "*/10 * * * *"  # Runs every 10 minutes
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   ping:
-    runs-on: ubuntu-latest
+    runs-on: debian-10
     steps:
-    - uses: fjogeleit/http-request-action@v1
-      with:
-        url: 'https://blog.tarunxsh.xyz/ping/'
-        method: 'GET'
+      - uses: actions/checkout@v3
+      - run: .github/scripts/ping.sh
