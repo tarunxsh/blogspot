@@ -1,0 +1,13 @@
+name: "Heartbeat"
+on:
+  schedule:
+  - cron: "*/10 * * * *"  # every 10 minute
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'https://blog.tarunxsh.xyz/'
+        method: 'GET'
